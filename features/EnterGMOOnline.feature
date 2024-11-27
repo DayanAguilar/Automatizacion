@@ -1,4 +1,7 @@
 Feature: GMO Online Site Catalog
+As an Online User 
+I want to see the GMO Catalog, 
+So I should be able to view the catalog of the page.
 
 Scenario: Verify Online Catalog items
     Given I am at GMO online catalog

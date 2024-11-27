@@ -1,4 +1,7 @@
 Feature: Compare browser differences on GMO site
+  As a Online User 
+  I want to compare browser differences, 
+  So I should be able to view a list of features supported by different browsers.
 
   Scenario: View list of differences between browsers
     Given I am at GMO Browser Page
@@ -15,3 +18,4 @@ Feature: Compare browser differences on GMO site
       | (should be an italic font) |
       | Trademarks are important™  |
       | Table Properties           |
+
