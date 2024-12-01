@@ -59,3 +59,8 @@ When(/^I click on the "Proceed With Order" Button$/) do
     actual_text = page.find(:xpath, '/html/body/h4/font').text
     expect(actual_text).to eq(expected_text)
   end
+
+  Then(/^A notification pops up "(.*)"$/) do |notification|
+    page.driver.browser.switch_to.alert.text == notification
+    page.driver.browser.switch_to.alert.accept
+  end
