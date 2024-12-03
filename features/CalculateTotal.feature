@@ -87,3 +87,15 @@ Scenario: Fill the quantity of six different products with high values
     Then I see the Product Total as "319980000.00"
     And I see the correct Sales Tax as "15999000.00"
     And I see the Grand Total as "335979005.00"
+
+Scenario: Fill the quantity of six different products with high values
+	And I write the quantities for the product in the table
+
+    | product                | input |   
+    | 3 Person Dome Tent     | 1000000    | 
+    | Glacier Sun Glasses    | 1000000    | 
+
+    When I click on the "Place an order" Button
+    Then I see the Product Total as "367980000.00"
+    And I see the correct Sales Tax as "18399000.00"
+    And I see the Grand Total as "386379005.00"
