@@ -9,6 +9,7 @@ Background:
 @maximize
 Scenario Outline: Clean the form when I entered data
   And I write the quantities for the product in the table
+  
     | product                | value |   
     | 3 Person Dome Tent     | 20    | 
     | External Frame Backpack| 21     |  
