@@ -34,3 +34,20 @@ Scenario: Fill the quantity of six different products
     Then I see the Product Total
     And I see the correct Sales Tax
     And I see the Grand Total
+
+
+Scenario: Fill the quantity of six different products with high values
+	And I write the quantities for the product in the table
+
+    | product                | input |   
+    | 3 Person Dome Tent     | 1000000    | 
+    | External Frame Backpack| 1000000    |  
+    | Glacier Sun Glasses    | 1000000    | 
+    | Padded Socks           | 1000000    | 
+    | Hiking Boots           | 1000000    |  
+    | Back Country Shorts    | 1000000    |
+
+    When I click on the "Place an order" Button
+    Then I see the Product Total
+    And I see the correct Sales Tax
+    And I see the Grand Total    
