@@ -14,9 +14,9 @@ Scenario: Fill the quantity of two different products
     | External Frame Backpack| 20    |  
 
     When I click on the "Place an order" Button
-    Then I see the Product Total
-    And I see the correct Sales Tax
-    And I see the Grand Total
+    Then I see the Product Total as "9598.80"
+    And I see the correct Sales Tax as "479.94"
+    And I see the Grand Total as "10083.74"
 
 
 Scenario: Fill the quantity of six different products
@@ -31,9 +31,9 @@ Scenario: Fill the quantity of six different products
     | Back Country Shorts    | 25    |
 
     When I click on the "Place an order" Button
-    Then I see the Product Total
-    And I see the correct Sales Tax
-    And I see the Grand Total
+    Then I see the Product Total as "14995.65"
+    And I see the correct Sales Tax as "749.78"
+    And I see the Grand Total as "15750.43"
 
 
 Scenario: Fill the quantity of six different products with high values
@@ -48,6 +48,6 @@ Scenario: Fill the quantity of six different products with high values
     | Back Country Shorts    | 1000000    |
 
     When I click on the "Place an order" Button
-    Then I see the Product Total
-    And I see the correct Sales Tax
-    And I see the Grand Total    
+    Then I see the Product Total as "702770000.00"
+    And I see the correct Sales Tax as "35138500.00"
+    And I see the Grand Total as "737908505.00"
