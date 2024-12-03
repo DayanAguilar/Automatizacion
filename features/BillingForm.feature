@@ -7,7 +7,7 @@ Background:
     When I click the "About the Enter GMO Online" button
 
 Scenario Outline: Fill the form with the correct data
-  And I write "<quantity>" in the value box "<product>"
+  And I write "<value>" in the value box "<product>"
   When I click on the "Place an order" Button
   And I see the summary of my purchase
   When I click on the "Proceed With Order" Button
@@ -26,11 +26,11 @@ Scenario Outline: Fill the form with the correct data
   When I click on the "Place The order" Button
   Then I see the succesful notification
   Examples:
-  | product                | quantity | 
+  | product                | value | 
   | 3 Person Dome Tent     | 1   |
 
 Scenario Outline: Fill the form with the wrong zip code 0000
-  And I write "<quantity>" in the value box "<product>"
+  And I write "<value>" in the value box "<product>"
   When I click on the "Place an order" Button
   And I see the summary of my purchase
   When I click on the "Proceed With Order" Button
@@ -49,10 +49,10 @@ Scenario Outline: Fill the form with the wrong zip code 0000
   When I click on the "Place The order" Button
   Then A notification pops up "Please enter a valid zip code in this field."
   Examples:
-  | product                | quantity | 
+  | product                | value | 
   | 3 Person Dome Tent     | 1   |
 Scenario Outline: Fill the form with the wrong card number 1
-  And I write "<quantity>" in the value box "<product>"
+  And I write "<value>" in the value box "<product>"
   When I click on the "Place an order" Button
   And I see the summary of my purchase
   When I click on the "Proceed With Order" Button
@@ -71,10 +71,10 @@ Scenario Outline: Fill the form with the wrong card number 1
   When I click on the "Place The order" Button
   Then A notification pops up "Please enter a valid card number of the form '1234-123456-12345' in this field."
   Examples:
-  | product                | quantity | 
+  | product                | value | 
   | 3 Person Dome Tent     | 1  |
 Scenario Outline: Fill the form with the wrong phone number
-  And I write "<quantity>" in the value box "<product>"
+  And I write "<value>" in the value box "<product>"
   When I click on the "Place an order" Button
   And I see the summary of my purchase
   When I click on the "Proceed With Order" Button
@@ -93,5 +93,5 @@ Scenario Outline: Fill the form with the wrong phone number
   When I click on the "Place The order" Button
   Then A notification pops up "Please enter a valid phone number in this field."
   Examples:
-  | product                | quantity | 
+  | product                | value | 
   | 3 Person Dome Tent     | 1  |

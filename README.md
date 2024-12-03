@@ -18,4 +18,9 @@ To generate a detailed HTML report of the test execution, run:
 cucumber --format html --out reports/report.html
 ```
 
+To run the feature without summary
+
+```bash
+cucumber .\features\{featureName} --publish-quiet
+```
 This will output the report to the `reports` folder in your project, specifically in the `report.html` file.

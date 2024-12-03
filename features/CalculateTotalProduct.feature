@@ -28,6 +28,6 @@ Scenario Outline: Fill the quantity of just one product with different values
     | 3 Person Dome Tent     | 2     | 
     | External Frame Backpack| 3     |  
     | Glacier Sun Glasses    | 4     | 
-    | Padded Socks           | 500     | 
+    | Padded Socks           | 1000000000     | 
     | Hiking Boots           | 30    |  
     | Back Country Shorts    | 20    |
