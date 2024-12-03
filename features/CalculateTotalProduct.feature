@@ -31,3 +31,17 @@ Scenario Outline: Fill the quantity of just one product with different values
     | Padded Socks           | 1000000000     | 
     | Hiking Boots           | 30    |  
     | Back Country Shorts    | 20    |
+
+
+Scenario Outline: Fill the quantity of just with different characters
+  And I write "<value>" in the value box "<product>"
+  When I click on the "Place an order" Button
+  Then A notification pops up "Please enter only digits in this field."
+  Examples:
+    | product                | value |   
+    | 3 Person Dome Tent     | p     | 
+    | External Frame Backpack| different     |  
+    | Glacier Sun Glasses    | a     | 
+    | Padded Socks           | w     | 
+    | Hiking Boots           | 30q    |  
+    | Back Country Shorts    | 20 qe   |
