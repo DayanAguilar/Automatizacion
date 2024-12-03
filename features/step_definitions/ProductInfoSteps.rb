@@ -1,5 +1,5 @@
 And(/^I click on the product "(.*)"$/) do |product|
-  within('body > form > table > tbody > tr:nth-child(2) > td > div > center > table') do
+  within(:xpath, "/html/body/form/table/tbody/tr[2]/td/div/center/table") do
     click_link(product)
   end
 end
