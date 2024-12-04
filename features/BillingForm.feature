@@ -204,3 +204,28 @@ Scenario Outline: Fill the form with the wrong phone number
   | product                | value | 
   | 3 Person Dome Tent     | 1  |
   | External Frame Backpack| 3     | 
+
+  Scenario Outline: Fill the form with a incorrect date
+  And I write "<value>" in the value box "<product>"
+  When I click on the "Place an order" Button
+  And I see the summary of my purchase
+  When I click on the "Proceed With Order" Button
+  And I fill the form with the following data
+    | Name        | pepito           |
+    | Address     | perez  |
+    | City        | cochabamba        |
+    | State       | cochabamba        |
+    | Zip         | 33126             |
+    | Phone       | 123-123-123          |
+    | E-mail      | pepito@borland.com |
+    | Card Type   | American Express   |
+    | Card Number | 1234-123456-12345   |
+    | Expiration  | 11^31              |
+    
+  Then I click on the same as bill
+  When I click on the "Place The order" Button
+  Then A notification pops up "Please enter a valid date of the form 'MM/YY' in this field."
+  Examples:
+  | product                | value | 
+  | 3 Person Dome Tent     | 1  |
+  | External Frame Backpack| 3     |
