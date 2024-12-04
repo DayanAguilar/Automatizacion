@@ -160,3 +160,34 @@ Scenario Outline: Fill the ship to form with the correct data
   | 3 Person Dome Tent     | 1   |
   | External Frame Backpack| 3     |
   | Glacier Sun Glasses    | 2     |
+
+  Scenario Outline: Fill the ship to form with the wrong zip
+  And I write "<value>" in the value box "<product>"
+  When I click on the "Place an order" Button
+  And I see the summary of my purchase
+  When I click on the "Proceed With Order" Button
+  And I fill the form with the following data
+    | Name        | pepito            |
+    | Address     | perez    |
+    | City        | cochabamba        |
+    | State       | cochabamba                 |
+    | Zip         | 33126               |
+    | Phone       | 123-123-1234           |
+    | E-mail      | pepito@borland.com |
+    | Card Type   | American Express   |
+    | Card Number | 1234-123456-12345    |
+    | Expiration  | 11/31              |
+  Then I fill the ship to form with the following data
+    | Name        | pepito            |
+    | Address     | perez    |
+    | City        | cochabamba      |
+    | State       | cochabamba                 |
+    | Zip         | 000               |
+    | Phone       | 123-123-1234           |
+  When I click on the "Place The order" Button
+  Then A notification pops up "Please enter a valid zip code in this field."
+  Examples:
+  | product                | value | 
+  | 3 Person Dome Tent     | 1   |
+  | External Frame Backpack| 3     |
+  | Glacier Sun Glasses    | 2     |
