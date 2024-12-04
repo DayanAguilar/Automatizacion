@@ -1,5 +1,22 @@
-# Cucumber Test Execution
-
+# 🚀 Cucumber Test Execution Guide
+## 📁 Clone the Project
+```bash
+git clone https://github.com/DayanAguilar/Automatizacion.git
+cd Automatizacion 
+```
+#Preconditions you have to make sure that you have installed ruby on your pc
+```bash
+ruby -v
+```
+Install these dependencies on ruby 
+```bash
+gem install cucumber
+gem install capybara
+gem install selenium-webdriver
+gem install selenium
+gem install rspec
+gem install capybara-screenshot
+```
 ## Execute Tests
 
 To run tests for a specific feature, use the following command:
