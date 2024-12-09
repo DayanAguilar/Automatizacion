@@ -3,7 +3,7 @@ When(/^I click the Reset button$/) do
   end
   
   Then(/^The form looks like the initial table$/) do |table|
-    within(:xpath, '/html/body/form/table/tbody/tr[2]/td/div/center/table') do
+    within('body > form > table > tbody > tr:nth-child(2) > td > div > center > table') do
       table.hashes.each do |row|
         product = row['product']
         input = row['input']
