@@ -1,14 +1,11 @@
 And(/^I click on the product "(.*)"$/) do |product|
-  within(:xpath, "/html/body/form/table/tbody/tr[2]/td/div/center/table") do
-    click_link(product)
-  end
+  @product_page = ProductInfoPage.new
+  @product_page.click_on_product(product)
 end
 
 Then(/^I should see the item id "(.*)"$/) do |expected_item_id|
-  matching_items = all('div table tbody tr').select do |row|
-    item_id_cell = row.all('td')[1]
-    item_id_cell && item_id_cell.text.strip == expected_item_id
-  end
+  @product_page = ProductInfoPage.new
+  matching_items = @product_page.find_item_id(expected_item_id)
   expect(matching_items.size).to eq(1), 
     "Expected exactly one item with ID #{expected_item_id}, but found #{matching_items.size}"
 end
