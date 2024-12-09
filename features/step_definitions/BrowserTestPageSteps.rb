@@ -9,7 +9,7 @@ When(/^I click the "Browser Test Page" button$/) do
 
 Then('I see the list of differences') do |table|
   expected_values = table.raw.flatten
-  actual_text = page.find(:xpath, '//html/body/div/center/table/tbody/tr/td[2]/table').text.strip
+  actual_text = page.find('body > div > center > table > tbody > tr > td:nth-child(2) > table').text.strip
   actual_values = actual_text.split("\n").map(&:strip)
   puts "Expected values: #{expected_values}"
   puts "Actual values: #{actual_values}"
