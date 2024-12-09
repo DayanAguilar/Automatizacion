@@ -1,4 +1,3 @@
-
 Given(/^I am at GMO online site$/) do
   @gmo_site_page = AboutGmoSitePage.new
   @gmo_site_page.open
