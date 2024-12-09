@@ -4,6 +4,7 @@ Given(/^I am at GMO online catalog$/) do
 end
 
 When(/^I click the "About the Enter GMO Online" button$/) do
+  @catalog_page = EnterGMOOnlinePage.new
   @catalog_page.click_about_enter_gmo_online_button
 end
 
