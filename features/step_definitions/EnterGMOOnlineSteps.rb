@@ -8,7 +8,7 @@ When(/^I click the "About the Enter GMO Online" button$/) do
   end
   
 Then('I see the Online Catalog') do |table|
-    catalog_table = page.find(:xpath, '/html/body/form/table/tbody/tr[2]/td/div/center/table')
+    catalog_table = page.find('body > form > table > tbody > tr:nth-child(2) > td > div > center > table')
     expected_items = table.raw.flatten.map(&:to_s)
     actual_items = catalog_table.all('tr').map do |row|
     row.all('td').map(&:text)
