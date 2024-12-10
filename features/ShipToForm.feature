@@ -61,7 +61,7 @@ Scenario Outline: Fill the ship to form with the correct data
     | Zip         | 33126               |
     | Phone       | 123-123-1234           |
   When I click on the "Place The order" Button
-  Then A notification pops up "This is a required field.."
+  Then A notification pops up "This is a required field."
   Examples:
   | product                | value | 
   | 3 Person Dome Tent     | 1   |
@@ -92,7 +92,7 @@ Scenario Outline: Fill the ship to form with the correct data
     | Zip         | 33126               |
     | Phone       | 123-123-1234           |
   When I click on the "Place The order" Button
-  Then A notification pops up "This is a required field.."
+  Then A notification pops up "This is a required field."
   Examples:
   | product                | value | 
   | 3 Person Dome Tent     | 1   |
@@ -123,7 +123,7 @@ Scenario Outline: Fill the ship to form with the correct data
     | Zip         | 33126               |
     | Phone       | 123-123-1234           |
   When I click on the "Place The order" Button
-  Then A notification pops up "This is a required field.."
+  Then A notification pops up "This is a required field."
   Examples:
   | product                | value | 
   | 3 Person Dome Tent     | 1   |
@@ -154,7 +154,7 @@ Scenario Outline: Fill the ship to form with the correct data
     | Zip         | 33126               |
     | Phone       | 123-123-1234           |
   When I click on the "Place The order" Button
-  Then A notification pops up "This is a required field.."
+  Then A notification pops up "This is a required field."
   Examples:
   | product                | value | 
   | 3 Person Dome Tent     | 1   |
