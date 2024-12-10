@@ -1,6 +1,5 @@
-# features/pages/ResetFormPage.rb
 
-class ResetPage
+class ResetFormPage
     include Capybara::DSL
     def initialize
     end

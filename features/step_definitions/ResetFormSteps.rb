@@ -1,7 +1,7 @@
 # features/step_definitions/ResetFormSteps.rb
 
 When(/^I click the Reset button$/) do
-  @reset_page = ResetPage.new
+  @reset_page = ResetFormPage.new
   @reset_page.click_reset_button
 end
 
