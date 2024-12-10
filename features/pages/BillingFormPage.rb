@@ -52,8 +52,7 @@ class BillingFormPage
   
     def accept_notification(notification)
       alert = page.driver.browser.switch_to.alert
-      alert_text = alert.text
-      alert.accept
+      alert_text = alert.text 
       alert_text == notification
     end
   end

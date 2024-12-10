@@ -216,7 +216,7 @@ Scenario Outline: Fill the form with the wrong phone number
     | City        | cochabamba        |
     | State       | cochabamba        |
     | Zip         | 33126             |
-    | Phone       | 123-123-123          |
+    | Phone       | 123-123-1234         |
     | E-mail      | pepito@borland.com |
     | Card Type   | American Express   |
     | Card Number | 1234-123456-12345   |
