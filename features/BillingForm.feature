@@ -1,4 +1,4 @@
-Feature: As a online shopper
+Feature: As an online shopper of GMO website
   I want to know which field I should fix if I made a mistake in the billing form
   So I can finish my purchase
 

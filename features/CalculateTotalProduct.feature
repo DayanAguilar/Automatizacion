@@ -1,4 +1,4 @@
-Feature: As an online shopper 
+Feature: As an online shopper of GMO website
   I want the system to calculate totals, taxes and shipping costs
   so I can see the final ammout I need to pay
 

@@ -1,4 +1,4 @@
-Feature: As a online shopper
+Feature: As an online shopper of GMO website
   I want to see my receipt
   So I can see where my product will be shipped 
 

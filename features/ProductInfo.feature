@@ -1,5 +1,5 @@
 Feature: View product details on the store
-  As a customer
+  As an online shopper of GMO website
   I want to view the details of a product
   So that I can decide whether I want to purchase it
 Background:

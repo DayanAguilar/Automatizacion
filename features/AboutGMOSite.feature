@@ -1,5 +1,5 @@
 Feature:  
-As an online shopper I want to access to the about as apart because 
+As an online shopper of GMO website I want to access to the about as apart because 
 I want to know how the page was made,
 so I have confidence when using the site.
 ‌

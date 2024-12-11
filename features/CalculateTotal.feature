@@ -1,4 +1,4 @@
-Feature: As an online shopper 
+Feature: As an online shopper of GMO website
   I want the system to calculate the total of products cost
   so I can see the final ammout
 

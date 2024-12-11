@@ -1,4 +1,4 @@
-Feature: As a online shopper
+Feature: As an online shopper of GMO website
   I want to clear all the field of the table of products
   So I can decide which product should I buy
 

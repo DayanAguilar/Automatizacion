@@ -1,5 +1,5 @@
 Feature: GMO Online Site Catalog
-As an Online User 
+As an online shopper of GMO website 
 I want to see the GMO Catalog, 
 So I should be able to view the catalog of the page.
 
